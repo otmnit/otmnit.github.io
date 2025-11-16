@@ -3,35 +3,33 @@ layout: page
 title: About
 ---
 
-# About
-
 Here I share my portfolio, cloud labs, infrastructure projects, and day-to-day life as a Cloud Engineer ☁️
 
 **Routing • Cloud • Linux • IoT • Security • eBPF**
 
 ---
 
-# 🚀 Portfolio Projects
+🚀 Portfolio Projects
 
-### **1 ▸ ISP / Enterprise / Cloud Network Architecture**  
+*1 ▸ ISP / Enterprise / Cloud Network Architecture*  
 Multi-AS lab with OSPF Area 0, BGP, HSRP, VLANs, NAT, tunnels and high-availability routing.  
-🔗 Repo ➜ /projects/isp-network-lab
+🔗 Repo ➜ /portfolio/isp-network-lab
 
-### **2 ▸ IoTBox — Virtual IoT Gateway**  
+*2 ▸ IoTBox — Virtual IoT Gateway*  
 Routing (FRR), firewall (nftables), QoS (tc), Suricata IDS, DHCPv6/RA, namespaces, Flask automation.  
-🔗 Repo ➜ /projects/iotbox
+🔗 Repo ➜ /portfolio/iotbox
 
-### **3 ▸ SOC Detection Lab (Wazuh + Suricata + APT-28)**  
+*3 ▸ SOC Detection Lab (Wazuh + Suricata + APT-28)*
 Full detection pipeline for attacks (MITRE ATT&CK, CVE exploits, CALDERA simulation).  
-🔗 Repo ➜ /projects/soc-wazuh-suricata
+🔗 Repo ➜ /portfolio/soc-wazuh-suricata
 
-### **4 ▸ High-Performance Networking – eBPF/XDP DoS Lab**  
+*4 ▸ High-Performance Networking – eBPF/XDP DoS Lab*
 Kernel-level packet filtering, traffic replay, performance tuning.  
-🔗 Repo ➜ /projects/ebpf-xdp-lab
+🔗 Repo ➜ /portfolio/ebpf-xdp-lab
 
 ---
 
-# 📝 Latest Blog Posts
+📝 Latest Blog Posts
 
 - 🔥 *Building a Carrier-Grade ISP Backbone in GNS3*  
 - 🔐 *Understanding Suricata & Wazuh Correlation*  
@@ -43,7 +41,7 @@ Kernel-level packet filtering, traffic replay, performance tuning.
 
 ---
 
-# 🛠️ Tech Stack
+🛠️ Tech Stack
 
 **Networking:** BGP, OSPF, VRF, VLAN, NAT, DHCPv6, HSRP  
 **Security:** Suricata, Wazuh, MITRE ATT&CK, VPN  
@@ -54,7 +52,7 @@ Kernel-level packet filtering, traffic replay, performance tuning.
 
 ---
 
-# 🎯 Currently Working On
+🎯 Currently Working On
 
 - AWS SAA  
 - CCNP ENCOR  
@@ -63,6 +61,6 @@ Kernel-level packet filtering, traffic replay, performance tuning.
 
 ---
 
-# 👉 Let’s connect!
+👉 Let’s connect!
 
 [GitHub](https://github.com/otmnit) — [X](https://x.com/otmnit)
