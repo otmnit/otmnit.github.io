@@ -25,4 +25,6 @@ plugins:
 collections:
   projects:
     output: true
+  articles:
+    output: true
 
