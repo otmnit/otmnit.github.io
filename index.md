@@ -5,7 +5,7 @@ title: Welcome
 
 <!-- Hero Section -->
 <div style="text-align:center; padding:40px 10px;">
-    <img src="/assets/images/ban.png" alt="Welcome" style="width:140px; border-radius:12px; margin-bottom:20px;">
+    <img src="/assets/images/ban.png" alt="Welcome" style="width:160px; border-radius:12px; margin-bottom:20px;">
     <h1 style="margin-bottom:10px;">Cloud & Network Engineering Blog</h1>
     <p style="font-size:18px; opacity:0.8;">
         Routing • Cloud • Linux • IoT • Security • eBPF
