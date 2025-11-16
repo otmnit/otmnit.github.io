@@ -1,0 +1,161 @@
+---
+layout: default
+title: Home
+---
+
+<style>
+    .hero {
+        padding: 60px 20px;
+        text-align: center;
+    }
+    .hero-title {
+        font-size: 42px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    .hero-sub {
+        font-size: 20px;
+        opacity: 0.75;
+        margin-bottom: 25px;
+    }
+    .hero-tags span {
+        background: #6c63ff;
+        padding: 6px 14px;
+        color: white;
+        border-radius: 20px;
+        font-size: 13px;
+        margin: 3px;
+        display: inline-block;
+    }
+
+    .section-title {
+        margin-top: 60px;
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        background: #f9f9ff;
+        margin-bottom: 25px;
+    }
+    .card img {
+        width: 130px;
+        height: auto;
+        border-radius: 8px;
+    }
+    .card h3 {
+        margin: 0;
+        font-size: 20px;
+    }
+    .card p {
+        margin-top: 6px;
+        opacity: 0.75;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 10px 18px;
+        background: #6c63ff;
+        color: white;
+        border-radius: 8px;
+        text-decoration: none;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    .footer-links {
+        text-align: center;
+        margin-top: 45px;
+        opacity: 0.7;
+        font-size: 14px;
+    }
+    .footer-links a {
+        margin: 0 8px;
+    }
+</style>
+
+
+
+<div class="hero">
+    <h1 class="hero-title">Cloud & Network Engineering Blog</h1>
+    <p class="hero-sub">Labs • Architecture • Routing • Linux • Security • IoT • Cloud</p>
+
+    <div class="hero-tags">
+        <span>BGP</span>
+        <span>OSPF</span>
+        <span>AWS</span>
+        <span>Linux</span>
+        <span>IoT</span>
+        <span>Suricata</span>
+        <span>eBPF/XDP</span>
+    </div>
+</div>
+
+
+
+<h2 class="section-title">🚀 Featured Projects</h2>
+
+<div class="card">
+    <img src="/projects/isp-network-lab/diagrams/topology-modern.png" alt="ISP Lab">
+    <div>
+        <h3><a href="/projects/isp-network-lab/">ISP / Enterprise / Cloud Multi-AS Architecture</a></h3>
+        <p>Full multi-AS design with OSPF, BGP, HSRP, VLANs, tunnels, and high-availability routing.</p>
+        <a class="btn" href="/projects/isp-network-lab/">View Project</a>
+    </div>
+</div>
+
+<div class="card">
+    <img src="/projects/iotbox/diagram.png" alt="IoTBox">
+    <div>
+        <h3><a href="/projects/iotbox/">IoTBox – Virtual IoT Edge Gateway</a></h3>
+        <p>Linux namespaces, FRR routing, nftables firewall, Suricata IDS, DHCPv6/RA, Flask automation.</p>
+        <a class="btn" href="/projects/iotbox/">View Project</a>
+    </div>
+</div>
+
+<div class="card">
+    <img src="/projects/soc-wazuh-suricata/diagram.png" alt="SOC Lab">
+    <div>
+        <h3><a href="/projects/soc-wazuh-suricata/">SOC Detection Lab (Wazuh + Suricata + MITRE ATT&CK)</a></h3>
+        <p>Full detection and correlation pipeline + CALDERA APT-28 emulation.</p>
+        <a class="btn" href="/projects/soc-wazuh-suricata/">View Project</a>
+    </div>
+</div>
+
+
+
+<h2 class="section-title">📝 Latest Articles</h2>
+
+<div class="card">
+    <img src="/assets/images/articles/welcome.png" alt="Welcome Article">
+    <div>
+        <h3><a href="/articles/welcome/">Welcome — Start Here</a></h3>
+        <p>What this blog contains and how to navigate labs & engineering content.</p>
+        <a class="btn" href="/articles/welcome/">Read Article</a>
+    </div>
+</div>
+
+<div class="card">
+    <img src="/assets/images/articles/bgp.png" alt="BGP Article">
+    <div>
+        <h3><a href="/articles/bgp-design/">Understanding Multi-AS Routing & BGP Path Selection</a></h3>
+        <p>Deep dive into BGP attributes, traffic engineering, route redistribution.</p>
+        <a class="btn" href="/articles/bgp-design/">Read Article</a>
+    </div>
+</div>
+
+
+
+<div class="footer-links">
+    <p>
+        <a href="/projects/">All Projects</a> • 
+        <a href="/articles/">All Articles</a> • 
+        <a href="https://github.com/otmnit">GitHub</a> • 
+        <a href="https://x.com/otmnit">X</a>
+    </p>
+</div>
