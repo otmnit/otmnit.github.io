@@ -1,30 +1,27 @@
 ---
-layout: home
-title: "Home"
+layout: default
+title: Welcome
 ---
 
-Welcome to my **IT Blog** 👋  
-Here I share my portfolio, cloud labs, infrastructure projects, and day-to-day life as a Cloud Engineer ☁️
+# Welcome to my Network & Cloud Engineering Blog
 
+This website is both my **technical blog** and my **portfolio**.
 
-Routing • Cloud • Linux • IoT • Security • eBPF
+I write about:
+- ISP & routing architectures  
+- Cloud networking (AWS, hybrid interconnects)  
+- IoT & IPv6  
+- Security engineering (IDS, SIEM, MITRE ATT&CK)  
+- Linux kernel networking (eBPF/XDP)  
 
-🚀 Portfolio Projects
+---
 
-1 ▸ ISP / Enterprise / Cloud Network Architecture Multi-AS lab with OSPF Area 0, BGP, HSRP, VLANs, NAT, tunnels and high-availability routing. 🔗 Repo ➜ /portfolio/isp-network-lab
+## 🔥 Latest Articles
+<ul>
+  {% for post in site.posts limit:5 %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a> — {{ post.date | date: "%B %d, %Y" }}
+    </li>
+  {% endfor %}
+</ul>
 
-2 ▸ IoTBox — Virtual IoT Gateway Routing (FRR), firewall (nftables), QoS (tc), Suricata IDS, DHCPv6/RA, namespaces, Flask automation. 🔗 Repo ➜ /portfolio/iotbox
-
-3 ▸ SOC Detection Lab (Wazuh + Suricata + APT-28) Full detection pipeline for attacks (MITRE ATT&CK, CVE exploits, CALDERA simulation). 🔗 Repo ➜ /portfolio/soc-wazuh-suricata
-
-4 ▸ High-Performance Networking – eBPF/XDP DoS Lab Kernel-level packet filtering, traffic replay, performance tuning. 🔗 Repo ➜ /portfolio/ebpf-xdp-lab
-
-📝 Latest Blog Posts 🔥 Building a Carrier-Grade ISP Backbone in GNS3 🔐 Understanding Suricata & Wazuh Correlation 🌐 IPv6 for IoT: DHCPv6, RA, and Edge Gateways ⚡ XDP vs iptables: Why eBPF Wins Every Time ☁ Cloud Networking: VPC Routing Deep Dive
-
-🔗 Read the blog ➜ otmnit.github.io
-
-🛠️ Tech Stack Networking: BGP, OSPF, VRF, VLAN, NAT, DHCPv6, HSRP Security: Suricata, Wazuh, MITRE ATT&CK, VPN Cloud: AWS (VPC, IAM, EC2, LB), Hybrid Architecture Linux: Debian, namespaces, nftables, tc, systemd Programming: Python, Flask, Bash Tools: GNS3, EVE-NG, Docker, Wireshark
-
-🎯 Currently Working On AWS SAA CCNP ENCOR IoTBox enhancements Writing deep dives on BGP, eBPF, IPv6
-
-👉 Let’s connect! [GitHub](https://github.com/otmnit) and [X](https://x.com/otmnit)
