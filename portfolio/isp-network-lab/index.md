@@ -3,8 +3,6 @@ layout: page
 title: ISP / Enterprise / Cloud Network Architecture
 ---
 
-# ISP / Enterprise / Cloud Network Architecture
-
 This project simulates a complete **multi-AS network architecture** involving:
 
 - an **Enterprise Network** (Admin, Dev, Marketing)
@@ -20,41 +18,41 @@ It was built and validated entirely in **GNS3**.
 
 ------------------------------------------------------------------------
 
-# 🖥️ Network Topology
+🖥️ Network Topology
 
 ![Topology](./diagrams/topology.png)
 
 ------------------------------------------------------------------------
 
-# 🎯 Objectives
+🎯 Objectives
 
 The main goals of this architecture were:
 
-### **1. Replace static routing with dynamic routing**
+*1. Replace static routing with dynamic routing*
 - OSPF Area 0 for the ISP backbone  
 - iBGP + eBGP peering between ASes  
 - Controlled redistribution (OSPF ↔ BGP)
 
-### **2. Improve interconnection between all networks**
+*2. Improve interconnection between all networks*
 - Enterprise → ISP  
 - ISP → Cloud Provider  
 - Personal network → ISP → Cloud  
 
-### **3. Add redundancy & high availability**
+*3. Add redundancy & high availability*
 - HSRP for gateway failover  
 - Dual uplinks towards ISP  
 - Core/distribution/access architecture for LAN
 
-### **4. Secure and optimize internal traffic**
+*4. Secure and optimize internal traffic*
 - VLAN segmentation  
 - NAT boundaries  
 - Private tunnels for intranet and remote access
 
 ------------------------------------------------------------------------
 
-# 🧩 Architecture Overview
+🧩 Architecture Overview
 
-### **Enterprise Network (AS450)**
+*Enterprise Network (AS450)*
 - 3 floors (Admin, Dev, Marketing)  
 - VLAN segmentation per department  
 - DHCP, NAT, ACLs  
@@ -64,34 +62,34 @@ The main goals of this architecture were:
   - **Core (CRE1/CRES1)**  
 - HSRP for gateway redundancy
 
-### **ISP Network (AS5)**
+*ISP Network (AS5)*
 - OSPF Backbone (Area 0)  
 - Six core routers (RO1 → RO6)  
 - Dual redundant mesh  
 - Route redistribution to BGP  
 - Public IP allocation
 
-### **Cloud Provider (AS567)**
+*Cloud Provider (AS567)*
 - Public subnet + DMZ  
 - Internal services (Web, Intranet)  
 - External services (Internet-facing servers)  
 - Border routers (RE2/RE3) → eBGP
 
-### **Personal Network**
+*Personal Network*
 - NAT, DHCP, client testing  
 - BGP/OSPF learned routes via ISP
 
 ------------------------------------------------------------------------
 
-# 🔀 Routing Design
+🔀 Routing Design
 
-### **OSPF**
+*OSPF*
 - ISP backbone runs **Area 0**
 - Fast convergence  
 - Stable neighbor adjacency between all RO* routers  
 - LSAs reflect link failure in real time
 
-### **BGP**
+*BGP*
 - **eBGP** between:  
   - Enterprise ↔ ISP  
   - ISP ↔ Cloud Provider  
@@ -99,36 +97,36 @@ The main goals of this architecture were:
 - Path manipulation for preferred routes  
 - Public IP advertisements  
 
-### **Redistribution**
+*Redistribution*
 - OSPF ↔ BGP carefully controlled  
 - Avoided loops using filtering + metric tuning  
 
 ------------------------------------------------------------------------
 
-# 🌐 Services & Features
+🌐 Services & Features
 
-### **✔ VLANs & Inter-VLAN routing**
+*✔ VLANs & Inter-VLAN routing*
 Each department has its own subnet.
 
-### **✔ HSRP**
+*✔ HSRP*
 Provides gateway redundancy for LAN clients.
 
-### **✔ NAT**
+*✔ NAT*
 - NAT overload for enterprise private addresses  
 - Public NAT for Cloud web services  
 
-### **✔ Tunnels**
+*✔ Tunnels*
 Encrypted tunnels used for intranet access and remote work.
 
-### **✔ DHCP**
+*✔ DHCP*
 Automatic addressing in enterprise floors.
 
-### **✔ ACLs**
+*✔ ACLs*
 Traffic filtering between departments + WAN access.
 
 ------------------------------------------------------------------------
 
-# 🛠️ Testing & Validation
+🛠️ Testing & Validation
 
 The following scenarios were tested:
 
@@ -149,7 +147,7 @@ All tests were performed using:
 
 ------------------------------------------------------------------------
 
-# 📚 What I Learned
+📚 What I Learned
 
 - Designing real-world multi-AS architectures  
 - Understanding redistribution pitfalls  
@@ -162,6 +160,5 @@ All tests were performed using:
 ------------------------------------------------------------------------
 
 If you want to explore all configurations, scenarios, and diagrams:  
-👉 **Full project root folder** (this page is only the overview).
-
+👉 **Full project root folder**
 
