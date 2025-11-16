@@ -3,8 +3,6 @@ layout: page
 title: Articles
 ---
 
-# Articles
-
 {% for article in site.articles %}
   {% assign a = article %}
   <div class="article-item" style="margin-bottom:40px;">
