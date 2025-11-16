@@ -3,8 +3,6 @@ layout: page
 title: Projects
 ---
 
-# Projects
-
 {% for project in site.projects %}
   {% assign p = project %}
   <div class="project-item" style="margin-bottom:40px;">
