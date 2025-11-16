@@ -1,5 +1,23 @@
-title: "IT Blog"
-description: "Labs, projects and day in life"
+title: "otmnit"
+description: "Network, Cloud & Security Engineering Blog"
 theme: minima
 
 markdown: kramdown
+
+author:
+  name: "otmnit"
+  github: "https://github.com/otmnit"
+  email: "otmnit@"
+
+header_pages:
+  - about.md
+  - projects.md
+  - articles.md
+  - posts.md
+
+minima:
+  skin: classic
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
