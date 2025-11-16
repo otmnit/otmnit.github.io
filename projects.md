@@ -5,20 +5,45 @@ title: Projects
 
 # Projects
 
-Here are the technical projects I'm building and documenting:
+{% for project in site.projects %}
+  {% assign p = project %}
+  <div class="project-item" style="margin-bottom:40px;">
 
-## 📡 ISP / Enterprise / Cloud Network Architecture
-Multi-AS routing, OSPF backbone, BGP, HSRP, VLAN, NAT, tunnels.  
-👉 [View project](./portfolio/isp-network-lab/)
+    <div style="display:flex; gap:20px; align-items:flex-start;">
+      
+      {% if p.thumbnail %}
+      <div style="width:200px; min-width:200px;">
+        <img src="{{ p.thumbnail }}" alt="{{ p.title }}" style="width:100%; border-radius:8px;">
+      </div>
+      {% endif %}
 
-## 🛰 IoTBox — IoT Gateway (Routing + Security + Automation) -> in progress
-FRRouting, nftables, Suricata, DHCPv6, RA, tc, Flask API.  
-👉 [View project](./portfolio/iotbox/)
+      <div>
+        <h2 style="margin-top:0;">
+          <a href="{{ p.link }}">{{ p.title }}</a>
+        </h2>
 
-## 🛡 SOC Detection Lab (Wazuh + Suricata + APT-28) -> in progress
-CVE exploitation → IDS → SIEM → correlation.  
-👉 [View project](./portfolio/soc-wazuh-suricata/)
+        <p>{{ p.description }}</p>
 
-## ⚡ eBPF/XDP High Performance DoS Lab -> in progress
-XDP DROP/PASS, packet filtering at kernel level, traffic replay.  
-👉 [View project](./portfolio/ebpf-xdp/)
+        <div style="margin:10px 0;">
+          {% for tag in p.tags %}
+          <span style="
+            background:#6c63ff;
+            color:white;
+            padding:4px 10px;
+            border-radius:15px;
+            font-size:12px;
+            margin-right:5px;">
+            {{ tag }}
+          </span>
+          {% endfor %}
+        </div>
+
+        <p style="font-size:13px; opacity:0.7;">
+          Last updated: {{ p.last_updated }}
+        </p>
+
+      </div>
+    </div>
+
+  </div>
+{% endfor %}
