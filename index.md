@@ -3,7 +3,7 @@ layout: default
 title: Welcome
 ---
 
-# Welcome to my Network & Cloud Engineering Blog
+![Alt text](welcome.png)
 
 This website is both my **technical blog** and my **portfolio**.
 
