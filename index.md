@@ -55,7 +55,7 @@ title: Welcome
         </li>
       {% endfor %}
     </ul>
-    <a href="/articles/" style="display:inline-block; margin-top:10px; background:#6c63ff; color:white; padding:8px 14px; border-radius:6px; text-decoration:none; font-size:14px;">
+    <a href="/_articles/" style="display:inline-block; margin-top:10px; background:#6c63ff; color:white; padding:8px 14px; border-radius:6px; text-decoration:none; font-size:14px;">
         View All Articles →
     </a>
 </div>
@@ -68,23 +68,23 @@ title: Welcome
     <ul style="list-style:none; padding-left:0;">
 
         <li style="margin-bottom:20px;">
-            <strong><a href="/projects/isp-network-lab/">ISP / Enterprise / Cloud Multi-AS Architecture</a></strong><br>
+            <strong><a href="/portfolio/isp-network-lab/">ISP / Enterprise / Cloud Multi-AS Architecture</a></strong><br>
             <span style="opacity:0.7;">OSPF • BGP • HSRP • VLANs • Tunnels • HA routing</span>
         </li>
 
         <li style="margin-bottom:20px;">
-            <strong><a href="/projects/iotbox/">IoTBox – Virtual IoT Edge Gateway</a></strong><br>
+            <strong><a href="/portfolio/iotbox/">IoTBox – Virtual IoT Edge Gateway</a></strong><br>
             <span style="opacity:0.7;">FRR • nftables • DHCPv6 • Suricata • Flask API</span>
         </li>
 
         <li style="margin-bottom:20px;">
-            <strong><a href="/projects/soc-wazuh-suricata/">SOC Detection Lab (Wazuh + Suricata + APT-28)</a></strong><br>
+            <strong><a href="/portfolio/soc-wazuh-suricata/">SOC Detection Lab (Wazuh + Suricata + APT-28)</a></strong><br>
             <span style="opacity:0.7;">MITRE ATT&CK • CVE exploitation • CALDERA</span>
         </li>
 
     </ul>
 
-    <a href="/projects/" style="display:inline-block; margin-top:10px; background:#6c63ff; color:white; padding:8px 14px; border-radius:6px; text-decoration:none; font-size:14px;">
+    <a href="/portfolio/" style="display:inline-block; margin-top:10px; background:#6c63ff; color:white; padding:8px 14px; border-radius:6px; text-decoration:none; font-size:14px;">
         View All Projects →
     </a>
 </div>
