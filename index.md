@@ -48,14 +48,14 @@ title: Welcome
 <div style="max-width:750px; margin:60px auto;">
     <h2>🔥 Latest Articles</h2>
     <ul>
-      {% for post in articles.posts limit:5 %}
+      {% for post in site.posts limit:5 %}
         <li style="margin-bottom:10px;">
           <a href="{{ post.url }}">{{ post.title }}</a>
           <span style="opacity:0.6;">— {{ post.date | date: "%B %d, %Y" }}</span>
         </li>
       {% endfor %}
     </ul>
-    <a href="/_articles/" style="display:inline-block; margin-top:10px; background:#6c63ff; color:white; padding:8px 14px; border-radius:6px; text-decoration:none; font-size:14px;">
+    <a href="https://otmnit.github.io/articles.html" style="display:inline-block; margin-top:10px; background:#6c63ff; color:white; padding:8px 14px; border-radius:6px; text-decoration:none; font-size:14px;">
         View All Articles →
     </a>
 </div>
@@ -84,7 +84,7 @@ title: Welcome
 
     </ul>
 
-    <a href="/portfolio/" style="display:inline-block; margin-top:10px; background:#6c63ff; color:white; padding:8px 14px; border-radius:6px; text-decoration:none; font-size:14px;">
+    <a href="https://otmnit.github.io/projects.html" style="display:inline-block; margin-top:10px; background:#6c63ff; color:white; padding:8px 14px; border-radius:6px; text-decoration:none; font-size:14px;">
         View All Projects →
     </a>
 </div>
