@@ -48,7 +48,7 @@ title: Welcome
 <div style="max-width:750px; margin:60px auto;">
     <h2>🔥 Latest Articles</h2>
     <ul>
-      {% for post in site.posts limit:5 %}
+      {% for post in articles.posts limit:5 %}
         <li style="margin-bottom:10px;">
           <a href="{{ post.url }}">{{ post.title }}</a>
           <span style="opacity:0.6;">— {{ post.date | date: "%B %d, %Y" }}</span>
