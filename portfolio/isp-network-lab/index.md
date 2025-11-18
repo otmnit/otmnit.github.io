@@ -20,7 +20,7 @@ It was built and validated entirely in **GNS3**.
 
 🖥️ Network Topology
 
-![Topology](./diagrams/topology.png)
+![Topology](./topology.png)
 
 ------------------------------------------------------------------------
 
