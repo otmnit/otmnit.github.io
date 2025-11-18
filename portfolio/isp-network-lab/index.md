@@ -24,6 +24,38 @@ It was built and validated entirely in **GNS3**.
 
 ------------------------------------------------------------------------
 
+📘 Network Addressing Summary
+
+| Category | Element / Link | Subnet / IP | Notes |
+|----------|-----------------|-------------|--------|
+| **Enterprise Network (AS450)** | Administrators VLAN | `192.168.10.0/24` | VLAN 10 |
+| | Developers VLAN | `192.168.20.0/24` | VLAN 20 |
+| | Marketing VLAN | `192.168.30.0/24` | VLAN 30 |
+| | Maintenance VLAN | `192.168.99.0/28` | VLAN 99 |
+| | Public IP | `223.1.2.136/29` | Enterprise external range |
+| **Operator Backbone (AS5)** | ROS1 Backbone | `12.0.0.0/29` | Area 0 |
+| | ROS2 Backbone | `12.0.10.0/29` | Area 0 |
+| **Personal Network (Area 35)** | Personal Subnet | `192.168.47.0/28` | Home LAN |
+| | Gateway | `192.168.47.1` | Home router |
+| | Public IP | `12.1.2.3` | User external IP |
+| **Cloud Provider (AS567)** | Intranet Subnet | `192.168.60.0/24` | via RE2 |
+| | Intranet Gateway | `192.168.60.1` | — |
+| | Intra Web Server | `192.168.60.2` | — |
+| | Intranet Server | `192.168.60.3` | — |
+| | Internet Subnet | `163.173.19.224/28` | via RE3 |
+| | Internet Gateway | `163.173.19.225` | — |
+| | Internet Web Server | `163.173.19.226` | — |
+| | Internet Intranet Server | `163.173.19.227` | — |
+| **Point-to-Point Links (A–G)** | Link A | `223.1.2.128/31` | P2P |
+| | Link B | `163.173.18.254/31` | P2P |
+| | Link C | `163.173.19.222/31` | P2P |
+| | Link D | `12.1.2.2/31` | P2P |
+| | Link E | `223.1.2.130/31` | P2P |
+| | Link F | `172.12.99.0/31` | Area 1 |
+| | Link G | `13.0.0.0/31` | Area 10 |
+
+------------------------------------------------------------------------
+
 🎯 Objectives
 
 The main goals of this architecture were:
