@@ -48,12 +48,10 @@ title: Welcome
 <div style="max-width:750px; margin:60px auto;">
     <h2>🔥 Latest Articles</h2>
     <ul>
-      {% for post in site.posts limit:5 %}
-        <li style="margin-bottom:10px;">
-          <a href="{{ post.url }}">{{ post.title }}</a>
-          <span style="opacity:0.6;">— {{ post.date | date: "%B %d, %Y" }}</span>
+      <li style="margin-bottom:20px;">
+            <strong><a href="/articles/welcome/">Blog / Networking / Cloud </a></strong><br>
+            <span style="opacity:0.7;">Network • Cloud • System • Blog</span>
         </li>
-      {% endfor %}
     </ul>
     <a href="https://otmnit.github.io/articles.html" style="display:inline-block; margin-top:10px; background:#6c63ff; color:white; padding:8px 14px; border-radius:6px; text-decoration:none; font-size:14px;">
         View All Articles →
