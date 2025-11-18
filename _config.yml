@@ -4,11 +4,6 @@ theme: minima
 
 markdown: kramdown
 
-author:
-  name: "otmnit"
-  github: "https://github.com/otmnit"
-  email: "otmnit@"
-
 header_pages:
   - about.md
   - projects.md
