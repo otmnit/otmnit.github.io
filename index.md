@@ -47,9 +47,9 @@ title: Welcome
 <!-- Latest Articles -->
 <div style="max-width:750px; margin:60px auto;">
     <h2>🔥 Latest Articles</h2>
-    <ul>
+    <ul style="list-style:none; padding-left:0;">
       <li style="margin-bottom:20px;">
-            <strong><a href="/articles/welcome/">Blog / Networking / Cloud </a></strong><br>
+            <strong><a href="/articles/welcome/">Welcome !</a></strong><br>
             <span style="opacity:0.7;">Network • Cloud • System • Blog</span>
         </li>
     </ul>
